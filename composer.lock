@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20e5d07383c091e86c467dd2ab1dcbc3",
+    "content-hash": "9cce0f8b2fdc3d700f1d64b0813408a9",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -664,6 +664,47 @@
                 }
             ],
             "description": "dotmailer integration for magento 2"
+        },
+        {
+            "name": "esorthapa/Javraevents",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esorthapa/Javraevents.git",
+                "reference": "c8a8352bcde3e9d67d8642feda87163035558e72"
+            },
+            "require": {
+                "magento/magento-composer-installer": "*",
+                "php": "^5.5 || ^7.0"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "magento-force": "override",
+                "installer-paths": {
+                    "app/code/Javra": [
+                        "vendor/module"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Javra\\Javraevents\\": ""
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "javra",
+                    "email": "at.thapaishwar@gmail.com"
+                }
+            ],
+            "description": "Javraevents",
+            "time": "2018-07-20T11:44:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -13035,6 +13076,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "composer/composer": 15,
+        "esorthapa/javraevents": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
